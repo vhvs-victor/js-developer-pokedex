@@ -1,0 +1,6 @@
+@charset "UTF-8";
+
+ol, li, a{
+    list-style: none;
+    text-decoration: none;
+}
