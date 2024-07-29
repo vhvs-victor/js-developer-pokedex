@@ -1,6 +1,165 @@
 @charset "UTF-8";
+*{
+    font-family: 'Roboto', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(243, 243, 243);
+}
+
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    background-color: #48D0B0;
+    border-radius: 20px;
+    box-shadow: 0px 0px 8px 2px rgb(209, 209, 209);
+}
 
 ol, li, a{
-    list-style: none;
     text-decoration: none;
+    list-style: none;
+}
+
+a{
+    color: white;
+}
+
+div.div-icons{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px ;
+}
+
+div.pokemon{
+    border-radius: 20px 20px 0px 0px;
+    padding: 0px 20px 20px 20px;
+    color: white;
+}
+
+div.button{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+span.name{
+    display: flex;
+    font-size: 1.5rem;
+}
+
+span.number{
+    display: flex;
+    justify-content: end;
+    font-size: 0.8rem;
+}
+
+ol.types{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+li.type{
+    padding: 4px 12px;
+    background-color: #3fb99d;
+    border-radius: 20px;
+    font-size: 0.7rem;
+}
+
+div.image{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 28%);
+    width: 160px;
+}
+
+img{
+    width: 155px;
+}
+
+div.pokemon-details{
+    background-color: white;
+    border-radius: 20px;
+    height: 368px;
+    padding: 20px;
+}
+
+.menu-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: rgb(182, 180, 180);
+    font-weight: lighter;
+    font-size: 0.8rem;
+    margin-top: 20px;
+}
+
+.page-details:hover{
+    color: rgb(53, 52, 52);
+    font-weight: normal;
+    cursor: pointer;
+}
+
+div.teste01{
+    display: inline-flex;
+}
+
+li.attributes-details{
+    margin-top: 20px;  
+    color: rgb(182, 180, 180);
+    font-weight: lighter;
+    font-size: 0.8rem;     
+}
+
+div.div-results-details{
+    padding-left: 35px;
+}
+
+li.results-details{
+    margin-top: 20px;
+    font-size: 0.8rem; 
+    color: rgb(53, 52, 52);
+}
+
+div.teste02{
+    display: inline-flex;
+}
+
+nav.nav-breeding{
+    margin-top: 30px;
+    color: rgb(53, 52, 52);
+}
+
+div.div-breeding{
+    font-size: 0.8rem;
+    color: rgb(182, 180, 180);
+    font-weight: lighter;
+}
+
+li.type-breeding{
+    padding-top: 20px;
+}
+
+div.div-results-breeding{
+    display: inline-flex;
+    font-size: 0.8rem;
+    color: rgb(53, 52, 52);
+    padding-left: 20px;
+}
+
+li.results-type-breeding{
+    padding-top: 20px;
+}
+
+li.results-type-breeding > span{
+    margin-right: 5px;
 }

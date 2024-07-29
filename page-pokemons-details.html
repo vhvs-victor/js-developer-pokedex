@@ -1,57 +1,141 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>page-pokemons-details</title>
 
-     <!-- Normalize CSS -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-     integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
-     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
- <!-- Font Roboto -->
- <link rel="preconnect" href="https://fonts.googleapis.com">
- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
+    <!-- Font Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
 
- <!-- Nosso CSS -->
- <link rel="stylesheet" href="/assets/css/global.css">
- <link rel="stylesheet" href="assets/css/page-pokemons-details.css">
+    <!--Google Icons-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <!-- Nosso CSS -->
+    <link rel="stylesheet" href="assets/css/page-pokemons-details.css">
+
 </head>
+
 <body>
     <section class="content">
-            <div class="pokemons">
-                <a href="#">Back-Home</a>
-                <a href="#">Icon-Heart</a>
-                <span>Bulbasaur</span>
-                <span>#001</span>
-                <ol>
-                    <li>
-                        Grass  
-                    </li>
-                    <li>
-                        Poison
-                    </li>
-                </ol>
+        <div class="div-icons">
+            <a href="#" class="arrow-back"><span class="material-symbols-outlined">arrow_back</span></a>
+            <a href="#" class="favorite"><span class="material-symbols-outlined">favorite</span></a>
+        </div>
+        <div class="pokemon">
+            <span class="name">Bulbasaur</span>
+            <span class="number">#001</span>
+            <ol class="types">
+                <li class="type">
+                    Grass
+                </li>
+                <li class="type">
+                    Poison
+                </li>
+            </ol>
+            <div class="image">
                 <img src="assets/images/bulbasaur-128x128.png" alt="">
             </div>
-            <div class="pokemons-details">
-                <ol>
-                    <li>
+        </div>
+        <div class="pokemon-details">
+            <nav class="menu-details">
+                <ol class="menu-list">
+                    <li class="page-details">
                         About
                     </li>
-                    <li>
+                    <li class="page-details">
                         Base Stats
                     </li>
-                    <li>
+                    <li class="page-details">
                         Evolution
                     </li>
-                    <li>
+                    <li class="page-details">
                         Moves
                     </li>
                 </ol>
+            </nav>
+            <!--REFATORAR LISTA PARA TABELA-->
+            <div class="teste01">
+                <div class="div-details">
+                    <ol class="list-details">
+                        <li class="attributes-details">
+                            Species
+                        </li>
+                        <li class="attributes-details">
+                            Height
+                        </li>
+                        <li class="attributes-details">
+                            Weigth
+                        </li>
+                        <li class="attributes-details">
+                            Abilities
+                        </li>
+                    </ol>
+                </div>
+                <div class="div-results-details">
+                    <ol>
+                        <li class="results-details">
+                            Especie
+                        </li>
+                        <li class="results-details">
+                            Altura
+                        </li>
+                        <li class="results-details">
+                            Peso
+                        </li>
+                        <li class="results-details">
+                            Abilidades
+                        </li>
+                    </ol>
+                </div>
             </div>
+            <!--REFATORAR ATÉ AQUI-->
+            <nav class="nav-breeding">
+                <ol class="list-nav-breeding">
+                    <li>
+                        Breeding
+                    </li>
+                </ol>
+            </nav>
+            <div class="teste02">
+                <div class="div-breeding">
+                    <ol class="list-breeding">
+                        <li class="type-breeding">
+                            Gender
+                        </li>
+                        <li class="type-breeding">
+                            Egg Group
+                        </li>
+                        <li class="type-breeding">
+                            Egg Cycle
+                        </li>
+                    </ol>
+                </div>
+                <div class="div-results-breeding">
+                    <ol class="list-results-breeding">
+                        <li class="results-type-breeding">
+                            <span><span class="material-symbols-outlined">male</span> 87.5%</span>
+                            <span><span class="material-symbols-outlined">female</span> 12.5%</span>
+                        </li>
+                        <li class="results-type-breeding">
+                            Monster
+                        </li>
+                        <li class="results-type-breeding">
+                            Grass
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
     </section>
 </body>
+
 </html>
