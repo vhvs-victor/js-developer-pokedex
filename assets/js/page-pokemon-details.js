@@ -1,6 +1,6 @@
 const characterId = document.getElementById('number');
 const btnGo = document.getElementById('btnGo');
-const conteudo = document.getElementById('conteudo');
+const conteudo = document.getElementById('content');
 
 const fecthApi = (value) =>{
     const result = fetch(`https://pokeapi.co/api/v2/pokemon/${value}`)
@@ -16,7 +16,7 @@ btnGo.addEventListener('click', async (event) => {
     event.preventDefault();
     const result = await fecthApi(characterId.value);
     conteudo.innerHTML = `
-    <section class="content">
+    
         <div class="div-icons">
             <a href="#" class="arrow-back"><span class="material-symbols-outlined">arrow_back</span></a>
             <a href="#" class="favorite"><span class="material-symbols-outlined">favorite</span></a>
@@ -119,7 +119,6 @@ btnGo.addEventListener('click', async (event) => {
                 </div>
             </div>
         </div>
-    </section>
     `
 })
 

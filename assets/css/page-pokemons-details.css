@@ -158,6 +158,7 @@ div.div-results-breeding{
 
 li.results-type-breeding{
     padding-top: 20px;
+    margin-top: -4px;
 }
 
 li.results-type-breeding > span{
